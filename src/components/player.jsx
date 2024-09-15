@@ -1,9 +1,10 @@
 import { useEffect, useState } from "react";
 import useSound from "use-sound";
-import qala from "../assets/qala.mp3";
+import nana from "../assets/Na-Na.mp3";
 import { AiFillPlayCircle, AiFillPauseCircle } from "react-icons/ai";
 import { BiSkipNext, BiSkipPrevious } from "react-icons/bi";
 import { IconContext } from "react-icons";
+import fotonana from "../assets/na.jpeg";
 
 export default function Player() {
   const [isPlaying, setIsPlaying] = useState(false);
@@ -18,7 +19,7 @@ export default function Player() {
 
   const [seconds, setSeconds] = useState();
 
-  const [play, { pause, duration, sound }] = useSound(qala);
+  const [play, { pause, duration, sound }] = useSound(nana);
 
   useEffect(() => {
     if (duration) {
@@ -59,11 +60,11 @@ export default function Player() {
 
   return (
     <div className="component">
-      <h2>Playing Now</h2>
-      <img className="musicCover" src="https://picsum.photos/200/200" />
+      <h2>Для Насти :)</h2>
+      <img className="musicCover" src={fotonana} />
       <div>
-        <h3 className="title">Rubaiyyan</h3>
-        <p className="subTitle">Qala</p>
+        <h3 className="title">Фаина</h3>
+        <p className="subTitle">Группа "На-на"</p>
       </div>
       <div>
         <div className="time">
