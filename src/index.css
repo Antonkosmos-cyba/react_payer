@@ -4,16 +4,21 @@
 }
 
 @font-face {
-  font-family: "pupure";
-  src: url(./assets/fonts/Meamury.ttf);
+  font-family: "crep";
+  src: url(./assets/fonts/creepster.otf);
 }
+
+@font-face {
+  font-family: "dua";
+  src: url(./assets/fonts/Duality.otf);
+}
+
 
 body {
   background-color: var(--fon);
 }
 
 .App {
-  font-family: pupure;
   text-align: center;
 }
 
@@ -26,6 +31,13 @@ body {
   border: 1px solid var(--bant);
   border-radius: 10px;
   box-shadow: 15px 16px 17px 0px rgba(34, 60, 80, 0.5);
+}
+
+.apekt {
+  font-family: crep;
+  font-size: clamp(1.8rem, calc(0.91rem + 2.93vw), 5rem);
+  margin: 0;
+  padding: 0;
 }
 
 .musicCover {
@@ -42,6 +54,12 @@ img {
   border: none;
   align-items: center;
   justify-content: center;
+}
+
+.title,
+.subTitle {
+  font-family: dua;
+  font-size: clamp(1.5rem, calc(0.91rem + 2.93vw), 1.5rem);
 }
 
 .subTitle {
