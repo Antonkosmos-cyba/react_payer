@@ -35,7 +35,9 @@ body {
 
 .apekt {
   font-family: crep;
-  font-size: clamp(1.8rem, calc(0.91rem + 2.93vw), 5rem);
+  /* font-size: clamp(2.8rem, calc(0.91rem + 2.93vw), 5rem); */
+
+  font-size: max(1em, min(4em, calc(100vw * 4 / 75)));
   margin: 0;
   padding: 0;
 }
@@ -59,7 +61,8 @@ img {
 .title,
 .subTitle {
   font-family: dua;
-  font-size: clamp(1.5rem, calc(0.91rem + 2.93vw), 1.5rem);
+  /* font-size: clamp(1.5rem, calc(0.91rem + 2.93vw), 1.5rem); */
+  font-size: max(0.8em, min(3em, calc(100vw * 4 / 75)));
 }
 
 .subTitle {
